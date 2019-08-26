@@ -23,8 +23,8 @@
         <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">
             <property name="enableSubPackages" value="true"/>  
         </sqlMapGenerator>  
-        <!--dao生成位置-->  
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.accp.sprintboot002.dao" targetProject="src/main/java">
+        <!--dao生成位置-->  o
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.accp.erp.inventoryManagement.dao" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>  
         </javaClientGenerator>  
         <!-- 
