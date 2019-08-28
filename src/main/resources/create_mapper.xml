@@ -9,22 +9,22 @@
             <property name="suppressAllComments" value="true"/>  
         </commentGenerator>  
         <!--数据库链接URL，用户名、密码 -->  
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/test" userId="root" password="root">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/erp" userId="root" password="root">
         </jdbcConnection>
         <javaTypeResolver>  
             <property name="forceBigDecimals" value="false"/>  
         </javaTypeResolver>  
         <!--pojo生成位置-->  
-        <javaModelGenerator targetPackage="com.accp.sprintboot002.pojo" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.accp.erp.xiangyueheng.pojo" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>  
             <property name="trimStrings" value="true"/>  
         </javaModelGenerator>  
         <!--映射文件生成位置-->  
-        <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="mapping/xiangyueheng" targetProject="src/main/resources">
             <property name="enableSubPackages" value="true"/>  
         </sqlMapGenerator>  
-        <!--dao生成位置-->  o
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.accp.erp.inventoryManagement.dao" targetProject="src/main/java">
+        <!--dao生成位置-->  
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.accp.erp.xiangyueheng.dao" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>  
         </javaClientGenerator>  
         <!-- 
@@ -32,11 +32,7 @@
 		domainObjectName是实体类名
 		-->  
 		<!--表1-->
-        <!--<table tableName="student" domainObjectName="Student" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
-        <!--<table tableName="record" domainObjectName="Record" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
-        <table tableName="peitems" domainObjectName="Peitem" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
-        <table tableName="itemtypes" domainObjectName="Itemtype" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
-
-        <!--表2-->
+        <table tableName="depttab" domainObjectName="depttab" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+		<!--表2-->
     </context>  
 </generatorConfiguration>  

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Properties;
 
 @Configuration
-@MapperScan(basePackages = { "com.accp.sprintboot002.dao" })
+@MapperScan(basePackages = { "com.accp.erp.*.dao" })
 public class BeansConfig {
 
 	@Bean
